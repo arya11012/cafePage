@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Arya's Restaurant Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            let dt;
+            let time;
+            
+           setInterval(() => {
+            dt=new Date();
+            time= dt.getHours()+':'+dt.getMinutes()+':'+dt.getSeconds();
+            document.getElementById("time1").innerText=time;
+            document.getElementById("time1").style.color="red";
+            document.getElementById("time1").style.fontSize="large";
+           },1000);
+        </script>
+        
+    </head>
+
+    <body>
+        <header>
+            <nav >
+                <ul>
+                    <li><a href="Home.html">Home</a>
+                    <li class="Menu"><a href="menu.html">Menu</a></li>
+                    <li class="Menu"><a href="menu.html">Contact Us</a></li>
+                    <input type="text" placeholder="Search" height="30px" class="search">
+                    
+                        <div id="time1"></div>
+
+                </ul>
+                <button class="searchbutton">Search</button>
+            </nav>
+            <div class="name">
+                <pre> Arya's  Cafe</pre>
+            </div>
+            <div class="logo">
+                <img src="img/logo.jpg"  >
+            </div>
+           
+        </header>
+        <main>
+            <div class="container">
+                
+                <div class="welcome">
+                    <h1>
+                        Discover the best of Arya's Cafe
+                </h1>
+                </div>
+                
+                
+            </div>
+            <div class="boxes">
+                <div class="box1"><a href="menu.html"><button class="btn1">Browse Menu</button><img src="img/menu.jpg" width="400vw" height="200vh"></a></div>
+                <div class="box2"><a href="specilas.html"><button class="btn2">Specials</button><img src="img/specials.jpg" alt="" width="400vw" height="200vh"></a></div>
+            </div>
+            <div class="container2">
+                <img src="img/bi3.jpg" alt="" width="1550vw" height="400vh">
+                <h2>Featured Products</h2>
+                <div class="flexbox">
+                    <div class="fp1"><img src="img/fp1.jpg" alt=""> <button>Order Now</button></div>
+                    <div class="fp2"><img src="img/fp2.jpg" alt=""><button>Order Now</button></div>
+                    
+                    <div class="fp3"><img src="img/fp3.jpg" alt=""><button>Order Now</button></div>
+                </div>
+            </div>
+            </main>
+    </body>
+</html>
